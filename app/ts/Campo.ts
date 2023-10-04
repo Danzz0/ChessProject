@@ -1,18 +1,27 @@
 
 export class Campo{
     public erro:string = "";
-    constructor(private simbolo:string){}
-
-    getJogador():string{ // retorna o valor de qualquer campo do tabuleiro
-        return this.simbolo;
+    constructor(private _simbolo:string, private _cor:string){
+        if(this._cor == "Branco"){
+            // cor da div do elemento vai ficar branca
+        } else {
+            // cor da div do elemento vai ficar preta
+        }
     }
-    getErro():string{ // retorna o tipo de erro presente nesse campo, caso tenha
+
+    
+
+    get simbolo():string{ 
+        return this._simbolo;
+    }
+    getErro():string{ 
         return this.erro;
     }
+    
 
     setJogador(jogada:string):boolean{ // atualiza o campo do tabuleiro informado pela jogada do usuário
-        if(this.simbolo == " "){ // Verifica se o campo está vazio
-            this.simbolo = jogada;
+        if(this._simbolo == " "){ // Verifica se o campo está vazio
+            this._simbolo = jogada;
             return true;
         } else { // Se o campo já estiver sendo usado!
             this.erro = "ERRO: Campo já usado!";

@@ -1,7 +1,9 @@
-import { Mensagem } from "./Mensagem";
-import { Livro } from "./Livro";
+import { Campo } from "./Campo"
+import { TabuController } from "./controllers/TabuController"
 
-let msg = new Mensagem("Hello World!!!")
 
-let liv1 = new Livro("Operação Manhatam", "Globo", 45)
-console.log(liv1);
+let tab = new TabuController()
+console.log(tab.teste())
+// tab.main()
+console.log(tab.pariTabu())
+

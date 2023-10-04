@@ -5,29 +5,35 @@ System.register([], function (exports_1, context_1) {
     return {
         setters: [],
         execute: function () {
-            Campo = /** @class */ (function () {
-                function Campo(simbolo) {
-                    this.simbolo = simbolo;
+            Campo = class Campo {
+                constructor(_simbolo, _cor) {
+                    this._simbolo = _simbolo;
+                    this._cor = _cor;
                     this.erro = "";
+                    if (this._cor == "Branco") {
+                        // cor da div do elemento vai ficar branca
+                    }
+                    else {
+                        // cor da div do elemento vai ficar preta
+                    }
                 }
-                Campo.prototype.getJogador = function () {
-                    return this.simbolo;
-                };
-                Campo.prototype.getErro = function () {
+                get simbolo() {
+                    return this._simbolo;
+                }
+                getErro() {
                     return this.erro;
-                };
-                Campo.prototype.setJogador = function (jogada) {
-                    if (this.simbolo == " ") { // Verifica se o campo está vazio
-                        this.simbolo = jogada;
+                }
+                setJogador(jogada) {
+                    if (this._simbolo == " ") { // Verifica se o campo está vazio
+                        this._simbolo = jogada;
                         return true;
                     }
                     else { // Se o campo já estiver sendo usado!
                         this.erro = "ERRO: Campo já usado!";
                         return false;
                     }
-                };
-                return Campo;
-            }());
+                }
+            };
             exports_1("Campo", Campo);
         }
     };
