@@ -1,10 +1,7 @@
-class Ola{
-    constructor(private _oi:string){}
+import { Mensagem } from "./Mensagem";
+import { Livro } from "./Livro";
 
-    get fala():string{
-        return this._oi;
-    }
-}
+let msg = new Mensagem("Hello World!!!")
 
-let msg = new Ola("Hello World!!!");
-console.log(msg.fala);
+let liv1 = new Livro("Operação Manhatam", "Globo", 45)
+console.log(liv1);
