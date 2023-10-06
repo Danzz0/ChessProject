@@ -32,11 +32,17 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 30px;
     }
+
+    
+
+    .form{
+        text-align: center;
+    }
 </style>
 <body>
     
 
-    <div class="container">
+    <div id="tabuView" class="container">
         <h1>Chessi Game</h1>
         
         <table class="centro">
@@ -149,13 +155,20 @@
         <br><br>
     </div>
 
-    <!-- <input type="button" value="click" onclick="pariTabu()"> -->
+    <form class="form">
+        <button type="submit">Click Here!</button>
+        <p>oaskoasoas</p>
+    </form>
+    
     
 
     <script src="lib/system.js"></script>
+
     <script>
         System.defaultJSExtensions = true
         System.import('js/main.js').catch(err => console.error(err))
     </script>
+
+   
 </body>
 </html>

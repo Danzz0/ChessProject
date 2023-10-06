@@ -10,9 +10,7 @@ System.register(["./controllers/TabuController"], function (exports_1, context_1
         ],
         execute: function () {
             tab = new TabuController_1.TabuController();
-            console.log(tab.teste());
-            // tab.main()
-            console.log(tab.pariTabu());
+            document.querySelector(".form").addEventListener('submit', tab.main.bind(tab));
         }
     };
 });
