@@ -28,8 +28,8 @@ System.register(["../Campo", "../views/TabuView"], function (exports_1, context_
                             }
                         }
                     }
-                    board.forEach((value) => {
-                    });
+                    // board.forEach((value) =>{
+                    // })
                     return board;
                 }
                 get tabu() {

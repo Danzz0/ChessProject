@@ -14,14 +14,25 @@ System.register([], function (exports_1, context_1) {
                     var tr = [];
                     var td = `<td><div class="campo"></div></td>`;
                     var line = [];
+                    var thead = [];
+                    var letras;
+                    var modelo;
                     for (let linha = 0; linha < 8; linha++) {
+                        if (linha > 0) {
+                            tr.splice(0, tr.length);
+                        }
                         for (let coluna = 0; coluna < 8; coluna++) {
-                            `<tr></tr>`;
+                            if (linha == 0) {
+                                letras = 65;
+                                thead.push(`<th>${String.fromCharCode(letras + coluna)}</th>`);
+                            }
                             tr.push(td);
                         }
                         line.push(`<tr>${tr.join(" ")}</tr>`);
                     }
-                    return line.join(" ");
+                    console.log(tr.join(" "));
+                    modelo = `<thead>${thead.join(" ")} </thead>${line.join(" ")}`;
+                    return modelo;
                 }
                 update() {
                     console.log("testeHtml");

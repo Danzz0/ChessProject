@@ -18,9 +18,9 @@ export class TabuController{
             }
         
         } 
-        board.forEach((value) =>{
+        // board.forEach((value) =>{
             
-        })
+        // })
         return board;
     }
 
