@@ -1,4 +1,5 @@
 import { Campo } from "../Campo"
+import { TabuView } from "../views/TabuView"
 
 
 export class TabuController{
@@ -17,6 +18,9 @@ export class TabuController{
             }
         
         } 
+        board.forEach((value) =>{
+            
+        })
         return board;
     }
 
@@ -26,8 +30,12 @@ export class TabuController{
 
     main(event:Event):Campo[][]{
         event.preventDefault();
+
+        let tabHtml = new TabuView("#tabuView");
+        tabHtml.update();
         
         var b = this.pariTabu(this._tabu);
+        
         console.log(b);
         return b;
     }

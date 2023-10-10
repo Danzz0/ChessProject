@@ -1,11 +1,14 @@
-System.register(["../Campo"], function (exports_1, context_1) {
+System.register(["../Campo", "../views/TabuView"], function (exports_1, context_1) {
     "use strict";
-    var Campo_1, TabuController;
+    var Campo_1, TabuView_1, TabuController;
     var __moduleName = context_1 && context_1.id;
     return {
         setters: [
             function (Campo_1_1) {
                 Campo_1 = Campo_1_1;
+            },
+            function (TabuView_1_1) {
+                TabuView_1 = TabuView_1_1;
             }
         ],
         execute: function () {
@@ -25,6 +28,8 @@ System.register(["../Campo"], function (exports_1, context_1) {
                             }
                         }
                     }
+                    board.forEach((value) => {
+                    });
                     return board;
                 }
                 get tabu() {
@@ -32,6 +37,8 @@ System.register(["../Campo"], function (exports_1, context_1) {
                 }
                 main(event) {
                     event.preventDefault();
+                    let tabHtml = new TabuView_1.TabuView("#tabuView");
+                    tabHtml.update();
                     var b = this.pariTabu(this._tabu);
                     console.log(b);
                     return b;
