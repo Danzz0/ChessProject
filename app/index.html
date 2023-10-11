@@ -38,126 +38,147 @@
     .form{
         text-align: center;
     }
+
+    .branco{
+        background-color: white;
+        
+    }
+    
+    .preto{
+        background-color: black;
+    }
+
+    .branco .preto:hover{
+        background-color: aqua;
+    }
+
+
 </style>
 <body>
-    
-
-    <div id="tabuView" class="container">
+    <div class="container">
         <h1>Chessi Game</h1>
 
+        <div id="tabuView" >
+        
+
 
 
         
         
-        <!-- <table class="centro">
-
-            <thead>
-                <th></th>
-                <th>A</th>
-                <th>B</th>
-                <th>C</th>
-                <th>D</th>
-                <th>E</th>
-                <th>F</th>
-                <th>G</th>
-                <th>H</th>
-            </thead>
+            <!-- <table class="centro">
     
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                </tr>
-                <tr>
-                    <th>4</th>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                </tr>
-                <tr>
-                    <th>5</th>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                </tr>
-                <tr>
-                    <th>6</th>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                </tr>
-                <tr>
-                    <th>7</th>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                </tr>
-                <tr>
-                    <th>8</th>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                    <td><div class="campo"></div></td>
-                </tr>
-    
-            </tbody>
+                <thead>
+                    <th></th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                        <td><div class="campo"></div></td>
+                    </tr>
+        
+                </tbody>
+                
+            </table> -->
             
-        </table> -->
-        <br><br>
+        </div>
+        <br>
     </div>
+    
+
+   
 
     <form class="form">
         <button type="submit">Click Here!</button>

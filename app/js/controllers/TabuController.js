@@ -15,7 +15,6 @@ System.register(["../Campo", "../views/TabuView"], function (exports_1, context_
             TabuController = class TabuController {
                 constructor() {
                     this._tabu = new Array(8).fill([]).map(() => new Array(8));
-                    this.bomdia = "bom dia";
                 }
                 pariTabu(board) {
                     for (var linha = 0; linha < 8; linha++) {
@@ -30,7 +29,7 @@ System.register(["../Campo", "../views/TabuView"], function (exports_1, context_
                     }
                     // board.forEach((value) =>{
                     // })
-                    return board;
+                    return board; // esse será o tabuleiro em que serão programadas as ações 
                 }
                 get tabu() {
                     return this._tabu;
@@ -42,9 +41,6 @@ System.register(["../Campo", "../views/TabuView"], function (exports_1, context_
                     var b = this.pariTabu(this._tabu);
                     console.log(b);
                     return b;
-                }
-                teste() {
-                    return this.bomdia;
                 }
             };
             exports_1("TabuController", TabuController);

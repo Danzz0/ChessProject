@@ -4,7 +4,6 @@ import { TabuView } from "../views/TabuView"
 
 export class TabuController{
     public _tabu:Campo[][] = new Array<Array<Campo>>(8).fill([]).map(() => new Array<Campo>(8));
-    public bomdia:string = "bom dia"
 
     public pariTabu(board:Campo[][]):Campo[][]{
         for(var linha = 0; linha<8; linha++){
@@ -21,7 +20,7 @@ export class TabuController{
         // board.forEach((value) =>{
             
         // })
-        return board;
+        return board; // esse será o tabuleiro em que serão programadas as ações 
     }
 
     get tabu():Campo[][]{
@@ -39,14 +38,6 @@ export class TabuController{
         console.log(b);
         return b;
     }
-
-    teste():string{
-        return this.bomdia
-    }
-
-    
-
-
 
     
 }
